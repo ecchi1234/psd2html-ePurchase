@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- set up font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <nav class="sidebar-nav">
+          <a class="logo" href="index.html">
+            <img src="./asset/logo.png" alt="" class="logo__icon" />
+          </a>
+          <div class="menu__list">
+            <div class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="./asset/dashboard.png"
+                  alt=""
+                  class="menu__item-icon"
+                />
+              </a>
+            </div>
+
+            <div class="menu__item">---------</div>
+
+            <div class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="./asset/de_nghi_thanh_toan.png"
+                  alt=""
+                  class="menu__item-icon"
+                />
+              </a>
+            </div>
+
+            <div class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="./asset/tam_ung.png"
+                  alt=""
+                  class="menu__item-icon"
+                />
+              </a>
+            </div>
+
+            <div class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="./asset/thanh_toan_tra_truoc.png"
+                  alt=""
+                  class="menu__item-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="content">
+          <nav class="content__topbar">
+            <button class="topbar__add-btn btn">
+              <img src="./asset/plus.png" alt="" class="add-btn__icon" />
+            </button>
+            <div class="right">
+              <p class="topbar__language">Tiếng việt</p>
+              <div class="topbar__noti">
+                <img src="./asset/thong_bao.png" alt="" class="noti__icon" />
+              </div>
+              <div class="topbar__account">
+                <div class="account__text">
+                  <div class="account__name">Vu Tuan</div>
+                  <div class="account__role">Administrator</div>
+                </div>
+                <img class="account__avatar" src="./asset/Oval.png" />
+              </div>
+            </div>
+          </nav>
+          <div class="content__header">
+            <div class="content__title">Đê nghị thanh toán</div>
+            <button class="content__add-btn btn">Tạo đề nghị</button>
+          </div>
+
+          <div class="content__searchbox">
+            <div class="searchbox__title title">Bạn đang tìm kiếm gì?</div>
+            <div class="searchbox__form">
+              <div class="form__group">
+                <img src="./asset/find.png" alt="" class="search__icon" />
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Nhập nội dung tìm kiếm..."
+                />
+              </div>
+
+              <div class="form__filter-list">
+                <div class="filter__item">
+                  <label for="" class="filter__title">Phòng ban</label>
+                  <br />
+
+                  <select name="" id="" class="filter__select">
+                    <option value="1">Tất cả</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                  </select>
+                </div>
+
+                <div class="filter__item">
+                  <label for="" class="filter__title">Trạng thái</label>
+                  <br />
+
+                  <select name="" id="" class="filter__select">
+                    <option value="1">Tất cả</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn form__btn--dropdown">
+                <img src="./asset/arrow_drop_down.png" alt="" />
+                <img src="./asset/arrow_drop_down.png" alt="" />
+              </button>
+
+              <button class="btn form__btn--remove-filter">
+                <span></span>
+                <div class="btn__text">Bỏ lọc</div>
+              </button>
+
+              <button class="btn form__btn--search">Tìm kiếm</button>
+            </div>
+          </div>
+
+          <div class="content__table">
+            <div class="table__heading">
+              <div class="heading__text title">Tất cả đề nghị</div>
+              <div class="table__filter">
+                <span>Hiển thị</span>
+                <select name="" id="" class="filter__select">
+                  <option value="1">Tất cả</option>
+                  <option value="1">1</option>
+                  <option value="1">1</option>
+                </select>
+                <div class="pagination">
+                  <div class="pagination__navigation--prev">
+                    <a href="#" class="navigation__link">
+                      <img src="./asset/Left.png" alt="">
+                    </a>
+                  </div>
+                  <div class="pagination__navigation--index-list">
+                    <div class="index__item">
+                      <a href="#" class="index__link">
+                        1
+                      </a>
+                    </div>
+
+                    <div class="index__item selected">
+                      <a href="#" class="index__link">
+                        2
+                      </a>
+                    </div>
+
+                    <div class="index__item">
+                      <a href="#" class="index__link">
+                        3
+                      </a>
+                    </div>
+
+                    <div class="more index__item">
+                      ...
+                    </div>
+
+                    <div class="index__item">
+                      <a href="#" class="index__link">
+                        10
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination__navigation--next">
+                    <a href="#" class="navigation__link">
+                      <img src="./asset/Right.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table__content">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"> </span>
+                    </div>
+                  </th>
+                  <th>Mã đề nghị</th>
+                  <th>Người đề nghị</th>
+                  <th>Đơn vị duyệt</th>
+                  <th>Ngày đề nghị</th>
+                  <th>Mô tả</th>
+                  <th>Loại đề nghị</th>
+                  <th>Trạng thái</th>
+                  <th>Thành tiền</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table__item">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+
+                      <span class="checkmark"> </span>
+                    </div>
+                  </td>
+                  <td class="table__item" id="id">ID 10-3290-08</td>
+                  <td class="table__item">
+                    <div class="customer-name">Rodney Cannon</div>
+                    <div class="customer-email">rodney.cannon@gmail.com</div>
+                  </td>
+                  <td class="table__item">
+                    <div class="customer-name">Phòng CNTT</div>
+                    <div class="customer-email">FIS.HO.CNTT</div>
+                  </td>
+                  <td class="table__item">17/07/2019</td>
+                  <td class="table__item">Đề nghị thanh toán...</td>
+                  <td class="table__item">Chuyển khoản</td>
+                  <td class="table__item status--cancelled">
+                    <div class="status__box">
+                      <div class="status__text">Cancelled</div>
+                    </div>
+                  </td>
+
+                  <td class="table__item">11,000,000</td>
+                  <td class="table__item">
+                    <div class="action__list">
+                      <div>
+                        <img src="./asset/view.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/edit.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/delete.png" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__item">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+
+                      <span class="checkmark"> </span>
+                    </div>
+                  </td>
+                  <td class="table__item" id="id">ID 10-3290-08</td>
+                  <td class="table__item">
+                    <div class="customer-name">Rodney Cannon</div>
+                    <div class="customer-email">rodney.cannon@gmail.com</div>
+                  </td>
+                  <td class="table__item">
+                    <div class="customer-name">Phòng CNTT</div>
+                    <div class="customer-email">FIS.HO.CNTT</div>
+                  </td>
+                  <td class="table__item">17/07/2019</td>
+                  <td class="table__item">Đề nghị thanh toán...</td>
+                  <td class="table__item">Chuyển khoản</td>
+                  <td class="table__item status--shipped">
+                    <div class="status__box">
+                      <div class="status__text">Shipped</div>
+                    </div>
+                  </td>
+
+                  <td class="table__item">11,000,000</td>
+                  <td class="table__item">
+                    <div class="action__list">
+                      <div>
+                        <img src="./asset/view.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/edit.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/delete.png" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__item">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+
+                      <span class="checkmark"> </span>
+                    </div>
+                  </td>
+                  <td class="table__item" id="id">ID 10-3290-08</td>
+                  <td class="table__item">
+                    <div class="customer-name">Rodney Cannon</div>
+                    <div class="customer-email">rodney.cannon@gmail.com</div>
+                  </td>
+                  <td class="table__item">
+                    <div class="customer-name">Phòng CNTT</div>
+                    <div class="customer-email">FIS.HO.CNTT</div>
+                  </td>
+                  <td class="table__item">17/07/2019</td>
+                  <td class="table__item">Đề nghị thanh toán...</td>
+                  <td class="table__item">Chuyển khoản</td>
+                  <td class="table__item status--processing">
+                    <div class="status__box">
+                      <div class="status__text">Processing</div>
+                    </div>
+                  </td>
+
+                  <td class="table__item">11,000,000</td>
+                  <td class="table__item">
+                    <div class="action__list">
+                      <div>
+                        <img src="./asset/view.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/edit.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/delete.png" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__item">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+
+                      <span class="checkmark"> </span>
+                    </div>
+                  </td>
+                  <td class="table__item" id="id">ID 10-3290-08</td>
+                  <td class="table__item">
+                    <div class="customer-name">Rodney Cannon</div>
+                    <div class="customer-email">rodney.cannon@gmail.com</div>
+                  </td>
+                  <td class="table__item">
+                    <div class="customer-name">Phòng CNTT</div>
+                    <div class="customer-email">FIS.HO.CNTT</div>
+                  </td>
+                  <td class="table__item">17/07/2019</td>
+                  <td class="table__item">Đề nghị thanh toán...</td>
+                  <td class="table__item">Chuyển khoản</td>
+                  <td class="table__item status--processing">
+                    <div class="status__box">
+                      <div class="status__text">Processing</div>
+                    </div>
+                  </td>
+
+                  <td class="table__item">11,000,000</td>
+                  <td class="table__item">
+                    <div class="action__list">
+                      <div>
+                        <img src="./asset/view.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/edit.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/delete.png" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__item">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+
+                      <span class="checkmark"> </span>
+                    </div>
+                  </td>
+                  <td class="table__item" id="id">ID 10-3290-08</td>
+                  <td class="table__item">
+                    <div class="customer-name">Rodney Cannon</div>
+                    <div class="customer-email">rodney.cannon@gmail.com</div>
+                  </td>
+                  <td class="table__item">
+                    <div class="customer-name">Phòng CNTT</div>
+                    <div class="customer-email">FIS.HO.CNTT</div>
+                  </td>
+                  <td class="table__item">17/07/2019</td>
+                  <td class="table__item">Đề nghị thanh toán...</td>
+                  <td class="table__item">Chuyển khoản</td>
+                  <td class="table__item status--processing">
+                    <div class="status__box">
+                      <div class="status__text">Processing</div>
+                    </div>
+                  </td>
+
+                  <td class="table__item">11,000,000</td>
+                  <td class="table__item">
+                    <div class="action__list">
+                      <div>
+                        <img src="./asset/view.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/edit.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/delete.png" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table__item">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" name="" id="" />
+
+                      <span class="checkmark"> </span>
+                    </div>
+                  </td>
+                  <td class="table__item" id="id">ID 10-3290-08</td>
+                  <td class="table__item">
+                    <div class="customer-name">Rodney Cannon</div>
+                    <div class="customer-email">rodney.cannon@gmail.com</div>
+                  </td>
+                  <td class="table__item">
+                    <div class="customer-name">Phòng CNTT</div>
+                    <div class="customer-email">FIS.HO.CNTT</div>
+                  </td>
+                  <td class="table__item">17/07/2019</td>
+                  <td class="table__item">Đề nghị thanh toán...</td>
+                  <td class="table__item">Chuyển khoản</td>
+                  <td class="table__item status--processing">
+                    <div class="status__box">
+                      <div class="status__text">Processing</div>
+                    </div>
+                  </td>
+
+                  <td class="table__item">11,000,000</td>
+                  <td class="table__item">
+                    <div class="action__list">
+                      <div>
+                        <img src="./asset/view.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/edit.png" alt="" />
+                      </div>
+
+                      <div>
+                        <img src="./asset/delete.png" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
